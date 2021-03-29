@@ -1,88 +1,169 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,700;1,400;1,700&display=swap');
 
-/* BROUILLON */
+/*  général  */
 
-#bloc_page{
-    border: 1px dotted red;
-    margin: auto;
-}
+    #bloc_page{
+        font-family: 'Raleway', arial, serif;
+        width: 80%;
+        margin: auto;
+    }
 
-header{
-    border: 1px none orange;
-}
+    p{
+        color: #797979;
+    }
 
-div, nav{
-    border: 1px none black;
-    width: 95%;
-}
+    h1{
+        font-size: 1.37em;
+        margin-bottom: 3px;
+    }
 
-nav ul{
-    border: 1px none black;
-}
-
-section{
-    border: 1px solid rgb(14, 168, 14);
-}
-
-footer{
-    border: 1px solid orange;
-}
-
-/*  CSS  */
-
-#bloc_page{
-    font-family: 'Raleway', arial, serif;
-}
-
-p{
-    color: #797979;
-}
-
-h1{
-    font-size: 1.37em;
-    margin-bottom: 3px;
-}
+/* header */
 
     header{
         display:flex;
         align-items: center;        
     }
-        nav ul{
-            list-style-type: none;
-            display: flex;
-        }
 
-        nav li{
-            margin-right: 50px;
-        }
+    nav ul{
+        list-style-type: none;
+        display: flex;
+    }
 
-        #titre p{
-            margin-top: 3px;
-        }
+    nav a{
+        margin-right: 50px;
+        text-decoration: none;
+        color: black;
+    }
 
-        #signup{
-            max-width: 80px;
-            color: #0065FC;
-            font-weight: bold;
-        }
-
-
-    #filtres{
-        text-transform: capitalize;
-        margin-top: 20px;
+    #signup{
+        max-width: 80px;
+        color: #0065FC;
         font-weight: bold;
     }
 
-        #filtres a{
-            margin: 15px;
-        }
+/* Titre */
+
+    #titre p{
+        margin-top: 3px;
+    }
+
+/* form_recherche */
+
+    .saisie, #filtres, #resultat_recherche{
+        margin-top: 35px;
+        margin-bottom: 20px;
+    }
+
+    .saisie{
+        display: flex;
+    }
+
+    .saisie i{
+        padding: 10px;
+        background: #F2F2F2;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .champ_saisie{
+        padding: 10px;
+        border: none;
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        font-weight: 600;
+    }
+
+    .btn_rechercher{
+        border: none;
+        background: #0065FC;
+        color: white;
+        padding: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-weight: 600;
+    }
+
+    #filtres{
+        text-transform: capitalize;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #filtres i{
+        width: 16px;
+        height: 16px;
+        padding: 10px;
+        background: #DEEBFF;
+        border-radius: 50%;
+        color: #0065FC;
+    }
+
+    #filtres a{
+        padding-right: 15px;
+        border: 1px solid #F2F2F2;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+
+    #filtres a:visited{
+        color: black;
+    }
 
     .icone_information{
         display: inline-block;
         border: 1px solid #797979;
         width: 20px;
         text-align: center;
-        border-radius: 100%;
+        border-radius: 50%;
         font-family: 'Cooper Black' , arial, serif;
         color: #0065FC;
+    }
+
+/* Section Hébergement */
+
+    .fond_gris{
+        background: #F2F2F2;
+        border-radius: 25px;
+        padding: 10px;
+        width: 70%;
+    }
+
+    .fond_gris h1{
+        padding-left: 10px;
+    }
+
+    .bloc_img_paysage{
+        background: white;
+        border-radius: 25px;
+        min-width: 200px;
+        font-size: 0.75em;
+        padding-left: 10px;
+        margin: 10px;
+    }
+
+    .diaporama{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+/* footer */
+
+    footer{
+        background: #F2F2F2;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.6em;
+    }
+
+    footer ol{
+        list-style: none;
+        padding-left: 0px;
+        padding-right: 100px;
+    }
+
+    footer li{
+        padding-top: 5px;
     }
