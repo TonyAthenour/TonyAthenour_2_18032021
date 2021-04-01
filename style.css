@@ -27,12 +27,20 @@
     nav ul{
         list-style-type: none;
         display: flex;
+        margin-top :0px;    
     }
 
     nav a{
         margin-right: 50px;
         text-decoration: none;
         color: black;
+        padding-top: 16px;
+    }
+
+    nav a:hover{
+        color: #0065FC;
+        border-top: 3px solid #0065FC;
+        padding-top: 13px;   
     }
 
     #signup{
@@ -84,7 +92,6 @@
     }
 
     #filtres{
-        text-transform: capitalize;
         font-weight: 600;
         display: flex;
         justify-content: space-between;
