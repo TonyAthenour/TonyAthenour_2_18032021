@@ -26,7 +26,7 @@
             </nav>
 
             <div id="signup">
-                S"inscrire
+                S'inscrire
             </div>
 
         </header>
@@ -38,13 +38,13 @@
 
         <div id="form_reherche">
             <div class="saisie">
-                <i class="fas fa-map-marker-alt"></i>
+                <button class="btn_localisation" type="button" title="localisation"><i class="fas fa-map-marker-alt"></i></button>
                 <input class="champ_saisie" type="text">
-                <button class="btn_rechercher" type="button" title="Rechercher">Rechercher</button>
+                <button class="btn_rechercher_txt" type="button" title="Rechercher">Rechercher</button>
+                <button class="btn_rechercher_ico" type="button" title="Rechercher"><i class="fas fa-search"></i></button>
             </div>
-
+            <h2>Filtres</h2>
             <div id="filtres">
-                <span>Filtres</span>
                 <a href="#" class="bouton"><i class="fas fa-money-bill-wave"></i> Économique</a>
                 <a href="#" class="bouton"><i class="fas fa-child"></i> Familial</a>
                 <a href="#" class="bouton"><i class="fas fa-heart"></i> Romantique</a>
@@ -57,47 +57,101 @@
         </div>
 
         <section id="hebergement">
-            <div class="fond_gris">
+
+            <div class="panel_1">
                 <article>
-                    <h1>Hébergement à 'ville'</h1>
+                    <div id="bloc_titre">
+                        <h1>Les plus populaires</h1>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    
+                    <div class="diaporama">
+                        <div class="bloc_img_carre">                            
+                            <img src="Images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="room" />
+                            <div class="info_hotel">
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de <span>xx€</span></p>
+                                <p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bloc_img_carre">                            
+                        <img src="Images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="room" />
+                        <div class="info_hotel">
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de <span>xx€</span></p>
+                            <p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bloc_img_carre">                            
+                        <img src="Images/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="room" />
+                        <div class="info_hotel">
+                            <h3>Hôtel Le soleil du matin</h3>
+                            <p>Nuit à partir de <span>xx€</span></p>
+                            <p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                        </div>
+                </article>
+            </div>
+
+            <div class="panel_2">
+                <article>
+                    <h1>Hébergements à Marseille</h1>
                     <div class=diaporama>
                         <div class="bloc_img_paysage">
-                            <img>
-                            <h1>Auberge la Cannebière</h1>
+                            <img src="Images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="room">
+                            <h3>Auberge La Cannebière</h3>
                             <p>Nuit à partir de <span>xx€</span></p>
                             <p> * * * * _</p>
                         </div>
                         <div class="bloc_img_paysage">
-                            <img>
-                            <h1>Hôtel du port</h1>
+                            <img src="Images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="room">
+                            <h3>Hôtel du port</h3>
                             <p>Nuit à partir de <span>xx€</span></p>
                             <p> * * * * *</p>
                         </div>
                         <div class="bloc_img_paysage">
-                            <img>
-                            <h1>Hôtel du port</h1>
+                            <img src="Images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="room">
+                            <h3>Hôtel Les mouettes</h3>
                             <p>Nuit à partir de <span>xx€</span></p>
                             <p> * * * * *</p>
                         </div>
                         <div class="bloc_img_paysage">
-                            <img>
-                            <h1>Hôtel du port</h1>
+                            <img src="Images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="room">
+                            <h3>Hôtel de la mer</h3>
                             <p>Nuit à partir de <span>xx€</span></p>
                             <p> * * * * *</p>
                         </div>
                         <div class="bloc_img_paysage">
-                            <img>
-                            <h1>Hôtel du port</h1>
+                            <img src="Images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="room">
+                            <h3>Auberge Le Panier</h3>
                             <p>Nuit à partir de <span>xx€</span></p>
                             <p> * * * * *</p>
                         </div>
                         <div class="bloc_img_paysage">
-                            <img>
-                            <h1>Hôtel du port</h1>
+                            <img src="Images/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="room">
+                            <h3>Hôtel chez Amina</h3>
                             <p>Nuit à partir de <span>xx€</span></p>
                             <p> * * * * *</p>
                         </div>
-                </div>
+                    </div>
                 </article>
             </div>
         </section>

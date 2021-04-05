@@ -2,10 +2,12 @@
 
 /*  général  */
 
+    body{
+        margin: 0px;
+    }
+
     #bloc_page{
         font-family: 'Raleway', arial, serif;
-        width: 80%;
-        margin: auto;
     }
 
     p{
@@ -17,60 +19,99 @@
         margin-bottom: 3px;
     }
 
+    h2{
+        margin-left: 10px;
+        margin-top: 25px;
+        font-size: large;
+    }
+
 /* header */
 
     header{
         display:flex;
-        align-items: center;        
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 25px;        
+    }
+
+    #logo{
+        margin-left: 10px;
+    }
+
+    nav:nth-child(2){
+        order: 3;
+    }
+
+    nav:nth-child(3){
+        order: 2;
+    }
+
+    nav{
+        width: 100%;      
     }
 
     nav ul{
         list-style-type: none;
         display: flex;
-        margin-top :0px;    
+        justify-content: space-around;
+        margin-top :0px;
+        padding-left: 0px;     
     }
 
     nav a{
-        margin-right: 50px;
         text-decoration: none;
         color: black;
         padding-top: 16px;
+        padding-bottom: 16px;
+        width: 50%;
+        text-align: center;
     }
 
     nav a:hover{
         color: #0065FC;
-        border-top: 3px solid #0065FC;
-        padding-top: 13px;   
+        border-bottom: 3px solid #0065FC;
+        padding-bottom: 13px;   
     }
 
     #signup{
         max-width: 80px;
         color: #0065FC;
         font-weight: bold;
+        margin-right: 10px;
     }
 
 /* Titre */
 
-    #titre p{
-        margin-top: 3px;
+    #titre{
+        padding: 10px;
+        padding-top: 0px;
     }
 
 /* form_recherche */
 
-    .saisie, #filtres, #resultat_recherche{
-        margin-top: 35px;
-        margin-bottom: 20px;
+    #filtres, #resultat_recherche{
+        margin: 20px;
+        
     }
 
     .saisie{
         display: flex;
+        margin: 10px;
     }
 
     .saisie i{
-        padding: 10px;
+        font-size: 18px;
+    }
+
+
+    .btn_localisation{
+        border: none;
         background: #F2F2F2;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        width: 51px;
+        height: 51px;
     }
 
     .champ_saisie{
@@ -78,10 +119,20 @@
         border: none;
         border-top: 1px solid #F2F2F2;
         border-bottom: 1px solid #F2F2F2;
-        font-weight: 600;
+        font-weight: 900;
     }
 
-    .btn_rechercher{
+    .btn_rechercher_ico{
+        border: none;
+        background: #0065FC;
+        color: white;
+      
+        border-radius: 15px;
+        width: 51px;
+        height: 51px;
+    }
+
+    .btn_rechercher_txt{
         border: none;
         background: #0065FC;
         color: white;
@@ -89,18 +140,18 @@
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
         font-weight: 600;
+        display: none;
     }
 
     #filtres{
         font-weight: 600;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: flex;       
+        flex-wrap: wrap;
     }
 
     #filtres i{
-        width: 16px;
-        height: 16px;
+        width: 25px;
+        height: 25px;
         padding: 10px;
         background: #DEEBFF;
         border-radius: 50%;
@@ -109,9 +160,11 @@
 
     #filtres a{
         padding-right: 15px;
-        border: 1px solid #F2F2F2;
+        border: 2px solid #F2F2F2;
         border-radius: 25px;
         text-decoration: none;
+        margin-bottom: 10px;
+        margin-right: 10px;
     }
 
     #filtres a:visited{
@@ -130,24 +183,56 @@
 
 /* Section Hébergement */
 
-    .fond_gris{
-        background: #F2F2F2;
-        border-radius: 25px;
+    .panel_1, .panel_2{
         padding: 10px;
-        width: 70%;
+        margin-top: 40px;
+        margin-bottom: 40px;
     }
 
-    .fond_gris h1{
-        padding-left: 10px;
+    .panel_1{
+        background: #F2F2F2;
     }
 
-    .bloc_img_paysage{
+    #bloc_titre{
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .panel_1 h1, .panel_2 h1{
+
+        margin-bottom: 25px;
+    }
+
+    .bloc_img_carre{
         background: white;
         border-radius: 25px;
-        min-width: 200px;
         font-size: 0.75em;
-        padding-left: 10px;
-        margin: 10px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .bloc_img_carre h3{
+        padding-right: 10px;
+        font-size: 1.36em;
+        margin: 0px;
+    }
+
+    .bloc_img_carre img{
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding: 5px;
+    }
+
+    .info_hotel{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .bloc_img_carre i{
+        color: #0065FC;
+        padding-top: 15px;
     }
 
     .diaporama{
@@ -155,6 +240,27 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    .bloc_img_paysage{
+        background: white;
+        border-radius: 25px;
+        font-size: 0.75em;
+        margin-bottom: 10px;
+        box-shadow: 6px 6px 3px #F2F2F2;
+    }
+
+    .bloc_img_paysage h3{
+        padding-right: 10px;
+        font-size: 1.36em;
+        margin: 0px;
+    }
+
+    .bloc_img_paysage img{
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        padding: 5px;
+    }
+
 
 /* footer */
 
