@@ -156,6 +156,8 @@
         background: #DEEBFF;
         border-radius: 50%;
         color: #0065FC;
+        padding-top: 13px;
+        padding-bottom: 5px;
     }
 
     #filtres a{
@@ -165,6 +167,9 @@
         text-decoration: none;
         margin-bottom: 10px;
         margin-right: 10px;
+        display: flex;
+        align-items: center;
+        text-align: center;
     }
 
     #filtres a:visited{
@@ -214,6 +219,7 @@
     }
 
     .bloc_img_carre h3{
+        padding-top: 10px;
         padding-right: 10px;
         font-size: 1.36em;
         margin: 0px;
@@ -223,16 +229,28 @@
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
         padding: 5px;
+        width: 135px;
+        height: 147px;
+        object-fit: cover;
     }
 
     .info_hotel{
         margin-left: 15px;
         margin-right: 15px;
+        width: 195px;
+        height: 140px;
     }
 
     .bloc_img_carre i{
+        padding-top: 30px;
+    }
+
+    .fa-star{
+        color: #F2F2F2;
+    }
+
+    .active{
         color: #0065FC;
-        padding-top: 15px;
     }
 
     .diaporama{
@@ -247,11 +265,20 @@
         font-size: 0.75em;
         margin-bottom: 10px;
         box-shadow: 6px 6px 3px #F2F2F2;
+        width: 335px;
+        min-height: 170px;
     }
 
     .bloc_img_paysage h3{
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-top: 5px;
         font-size: 1.36em;
+        margin: 0px;
+    }
+
+    .bloc_img_paysage p{
+        padding-left: 15px;
+        padding-top: 5px;
         margin: 0px;
     }
 
@@ -259,16 +286,22 @@
         border-top-left-radius: 25px;
         border-top-right-radius: 25px;
         padding: 5px;
+        width: 325px;
+        height: 115px;
+        object-fit: cover;
     }
-
 
 /* footer */
 
     footer{
         background: #F2F2F2;
-        display: flex;
-        justify-content: space-between;
         font-size: 0.6em;
+        padding-left: 15px;
+    }
+
+    footer h1{
+        padding-top: 25px;
+        padding-bottom: 5px;
     }
 
     footer ol{
@@ -279,4 +312,5 @@
 
     footer li{
         padding-top: 5px;
+        padding-bottom: 5px;
     }
