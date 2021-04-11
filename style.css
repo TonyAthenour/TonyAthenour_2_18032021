@@ -178,6 +178,11 @@
         text-align: center;
     }
 
+    #filtres p{
+        color: black;
+        padding-left: 5px;;
+    }
+
     #filtres a:visited{
         color: black;
     }
