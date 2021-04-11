@@ -420,6 +420,10 @@
 
     /* Acitivités */
 
+    h1{
+        margin-left: 15px;
+    }
+
     #activite .diaporama{
         align-items: flex-start;
     }
@@ -450,6 +454,19 @@
 
     .img36 img{
         height: 155px;;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer ol{
+        flex: 1;
+    }
+
+    footer h1{
+        margin: unset;
     }
 }
 
