@@ -21,8 +21,8 @@
 
     h2{
         margin-left: 10px;
-        margin-top: 25px;
-        font-size: large;
+        padding-top: 25px;
+        font-size: 1.37em;
     }
 
 /* header */
@@ -51,7 +51,7 @@
         width: 100%;      
     }
 
-    nav ul{
+    nav li{
         list-style-type: none;
         display: flex;
         justify-content: space-around;
@@ -219,7 +219,7 @@
         justify-content: space-between;
     }
 
-    .panel_1 h1, .panel_2 h1{
+    .panel_1 h2, .panel_2 h2{
 
         margin-bottom: 25px;
     }
@@ -349,7 +349,7 @@
     }
 
     #signup{
-        padding-top: 15px;
+        padding-top: 35px;
     }
 
     nav{
@@ -429,7 +429,7 @@
 
     /* Acitivités */
 
-    h1{
+    h2{
         margin-left: 15px;
     }
 
@@ -474,8 +474,9 @@
         flex: 1;
     }
 
-    footer h1{
+    footer h2{
         margin: unset;
+        padding-bottom: 10px;
     }
 }
 
