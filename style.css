@@ -314,9 +314,10 @@
         padding-left: 15px;
     }
 
-    footer h1{
+    footer strong{
         padding-top: 25px;
         padding-bottom: 5px;
+        font-size: 1.2em;
     }
 
     footer ol{
