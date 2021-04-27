@@ -51,12 +51,19 @@
         width: 100%;      
     }
 
-    nav li{
+    nav ul{
         list-style-type: none;
         display: flex;
         justify-content: space-around;
         margin-top :0px;
         padding-left: 0px;     
+    }
+
+    nav li{
+        padding-top: 16px;
+        padding-bottom: 16px;
+        width: 50%;
+        text-align: center;
     }
 
     nav a{
@@ -68,7 +75,7 @@
         text-align: center;
     }
 
-    nav a:hover{
+    nav li:hover{
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
         padding-bottom: 13px;   
@@ -314,10 +321,11 @@
         padding-left: 15px;
     }
 
-    footer strong{
+    footer start{
         padding-top: 25px;
         padding-bottom: 5px;
         font-size: 1.2em;
+        font-weight: bold;
     }
 
     footer ol{
@@ -350,7 +358,7 @@
     }
 
     #signup{
-        padding-top: 35px;
+        padding-top: 18px;
     }
 
     nav{
@@ -358,11 +366,11 @@
         align-content: center;
     }
 
-    nav a{
+    nav li{
         padding-top: 50px;
     }
 
-    nav a:hover{
+    nav li:hover{
         padding-top: 47px;
         border-top: 3px solid #0065FC;
         border-bottom: none;
